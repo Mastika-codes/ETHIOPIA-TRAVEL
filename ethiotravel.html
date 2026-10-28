@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIT ETHIOPIA</title>
+    <style>
+        .landingContainer{
+   
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.8)
+    rgba(0, 0, 0, 0.2));
+     background-image:
+    url(image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(60%);/*i don not know why it doesnt allow me to make it dim with out using brightness*/
+    width: 100%;
+    margin-top: 200px;
+}
+.homeContainer{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: sticky;
+}
+.homeContainer .homeLogo {
+    display: inline-flex;
+    justify-content: flex-start;
+    /*align-items: center;*/
+    color: white;
+}
+.homeContainer .menuBar li{
+    display: inline-flex;
+    color: white;
+}
+/*.menuBar{
+    margin-left: auto;}*/
+h3{
+    margin-left: 20px;
+}
+.ethioflag{
+    width: 80px;
+    border-radius: 10%;
+    margin: 10px;
+    height: 50px;
+}
+.textLogo h3{
+    /* text-align: justify; i wanted to make the content always non wrap */
+    /* flex-wrap: nowrap; this anit working */
+}
+.b{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+a:hover{
+    color:aqua;
+    transition: 1s;
+    opacity: 0.5;
+}
+button{
+    align-content: center;
+    border-radius: 42%;
+    background-color: orange;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    width: 130px;
+    border-style: solid;
+}
+.part{
+    margin: 0px;
+    font-size: 5rem;
+    margin-bottom: 0px;
+    color: white;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.p1{
+    color: goldenrod;
+    font-weight: bold;
+}
+.visit{
+    color: white;
+    margin-top: none;
+    margin-bottom: none;
+    margin-left: 25px;
+    font-size: 1.5rem;
+}
+.center, .readmores, .booknow{
+    display: flex;
+    justify-content: center;
+}
+img{
+    border-radius: 100%;
+    width: 150px;
+    height: fit-content;
+    justify-content: center;
+}
+p{
+    color: black;
+}
+.packageboxcontainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px 10px;
+    width: 280px;
+    flex-wrap: wrap;
+}
+.packageparagraphcontainer p{
+    text-align: center;
+}
+.packageContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    min-height: 350px;
+    padding: 30px 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    text-align: left;
+    row-gap: 20px;
+    column-gap: 25px;
+    transition: 0.3;
+
+}
+.packageboxcontainer:hover {
+    transform: translateY(-10px);
+    box-shadow: #cccccc;
+}
+.packageContainer .packagetitlecontainer a {
+   display: inline-block;
+}
+.booknow{
+    border-radius: 35%;
+    border-color: black;
+    background-color: #0000014d;
+    border-style: solid;
+    color: orange;
+}
+.readmores{
+    border-radius: 35%;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(0, 0, 0.8, 0.3);
+    color: orange;
+    padding: 12px;
+    align-content: center;
+}
+.ndimage{
+    border-radius: 30%;
+}
+form{
+    display: grid;
+}
+.extracontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.lim {
+    color: orange;
+    text-decoration:underline;
+    font-weight: bold;
+}
+li a{
+    text-decoration: none;
+    list-style: none;
+}
+li{
+    list-style: none;
+    text-align: left;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+body{
+    background-color: #1b1f24;
+    color: orange;
+    font-weight: bold;
+}
+a.title{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    display: inline-block;
+    text-align: justify;
+}
+.packageparagraphcontianer p{
+    color: whitesmoke;
+}
+.packageHeadingContainer h1{
+    text-align: justify;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+    <div class="homeContainer">
+        <div class="homeLogo">
+            <div class="textLogo">
+                <h3><strong>Visit Ethiopia</strong></h3>
+            </div>
+            <div class="imageLogo">
+                <img  class="ethioflag" src="photo_2026-10-20_11-54-10.jpg">
+            </div>
+
+        </div>
+
+        <div class="menuBar">
+            <ul>
+                <li><a class="b" href="">HOME</a></li>
+                <li><a class="b" href="">LATEST NEWS</a></li>
+                <li><a class="b" href="">ADVENTURE</a></li>
+                <li><a class="b" href="">PACKAGES</a></li>
+                <li><a class="b" href="">CONTACT</a></li>
+                <li><a class="b" href="">TOUR</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- <section class="landingContainer">
+        <div class="neverstop">
+            <h1>Never Stop</h1>
+        </div>
+        <div>
+            <h1>Exploring</h1>
+        </div>
+    </section> -->
+        <div class="landingContainer">
+            <p class="part">Never Stop<br><span class="p1">Exploring</span></p>
+            <p class="visit">Visit Ethiopia Offers Best Deals On Ethiopia Tour Packaging.</p>
+            <div class="center">
+            <button>Get Started</button>
+            </div>
+        </div>
+        <section class="packageContainer">
+                <h2 class="title">Adventure Tour</h2>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image src="IMG_20261021_144055_281.jpg" alt="abajifar palace"></image>
+                    <div packageHeadingContainer>
+                        <h1>Abba Jifar Palace</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>Before being incorporated into the central Christian Empire of Ethiopia, Jimma was one and the strongest of the five autonomous Gibe kingdoms of the Oromo people under the leadership of Abba Jifar Abba Gomal, best known as king Abba Jifar also known by his Islamic name (Sultan Muhammad Dawud Ibn Ibrahim) of Jimma.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                    <a class="readmores" href="">Readmore</a>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image src="IMG_20261021_144055_853.jpg" alt="king Ezaba Axum"></image>
+                    <div packageHeadingContainer>
+                        <h1>King Ezanas Axum</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>The ancient kingdom of Aksum was located in present-day Ethiopia. This wealthy African civilization celebrated its achievements with monuments like King Ezana's stela in Stelae Park, Ethiopia.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                   <a class="readmores" href="">Readmore</a>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                     <image src="IMG_20261021_144055_581.jpg" alt="Fasil Ghebbi Gonder"></image>
+                    <div packageHeadingContainer>
+                        <h1>Fasil Ghebbi Gonder</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>During unsettled periods between the thirteenth and seventeenth centuries, Ethiopian rulers moved their royal camps frequently. King Fasil (Fasiledes) settled in Gondar and established it as a permanent capital in 1636. After Fasil, successive kings continued building, improving the techniques and architectural style.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                    <a class="readmores" href="">Readmore</a>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image src="simienpark.png" alt="Simien Mountains"></image>
+                    <div packageHeadingContainer>
+                        <h1>Simien Mountains</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>The Simien Mountains National Park in Northern Ethiopia is an exotic setting with unique wildlife and breath-taking views on a landscape shaped by nature and traditional agriculture. The natural beauties of this region have always filled visitors from Ethiopia and abroad with awe. Gentle highland ridges at altitudes above 3600 meters above sea level (m asl), covered with grasses, isolated trees (Erica &bored) and the bizarre Giant Lobelia (Lobelia rhynchopetalum) are found on the high plateau that ends abruptly at 1000- to 2000-m deep escarpments.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                    <a class="readmores" href="">Readmore</a>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image src="IMG_20261021_144055_643.jpg" alt="Kumsa Moroda Palaces"></image>
+                    <div packageHeadingContainer>
+                        <h1>Kumsa Moroda Palaces</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>Before being incorporated into the central Christian Empire of Ethiopia, Jimma was one and the strongest of the five autonomous Gibe kingdoms of the Oromo people under the leadership of Abba Jifar Abba Gomal, best known as king Abba Jifar also known by his Islamic name (Sultan Muhammad Dawud Ibn Ibrahim) of Jimma.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                   <a class="readmores" href="">Readmore</a>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image src="IMG_20261021_144055_183.jpg" alt="Dirre Sheik Hussein"></image>
+                    <div packageHeadingContainer>
+                        <h1>Dirre Sheik Hussein</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>Dirre Sheik Hussein (Shrine): It is situated on the border of West Harargé and Balé Zones at the Southern edge of Web River. It is 178 km far from Robé along the all weather road that passes through Jarra, and Dallo Sabro towns. The Shrine is named after an ancient muslim holy man (religious leader) called Sheikh Nur Husein bin Malka or bin Ibrahim who was reputed for his religious teachings, high devotion and remarkable miraculous deeds.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                    <a class="readmores" href="">Readmore</a>
+                </div>
+            </div>
+            
+
+        </section>
+        <section class="packageContainer">
+            
+                <h2 class="title" >Popular Packages</h2>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image class="ndimage" src="6 days.jpg" alt="6 Days Bale Mountains Trekking Tour"></image>
+                    <div packageHeadingContainer>
+                        <h1>6 Days Bale Mountains Trekking Tour</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>Itinerary Start in Addis Ababa and end in Harenna Forest! With the Hiking & Trekking tour 6 Days Bale Mountains Trekking Tour, you have a 6 days tour package taking you through Addis Ababa, Ethiopia and 4 other destinations in Ethiopia. 6 Days Bale Mountains Trekking Tour includes accommodation in a hotel as well as flights, an expert guide, meals, transport.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                   <button class="booknow">Book Now</button>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image class="ndimage" src="IMG_20261021_144055_497.jpg" alt="Cultural Trip to the Omo Valley Tribes of Ethiopia"></image>
+                    <div packageHeadingContainer>
+                        <h1>Cultural Trip to the Omo Valley Tribes of Ethiopia</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>Itinerary Start and end in Addis Ababa! With the In-depth Cultural tour Cultural Trip to the Omo Valley Tribes of Ethiopia, you have a 7 days tour package taking you through Addis Ababa, Ethiopia and 6 other destinations in Ethiopia. Cultural Trip to the Omo Valley Tribes of Ethiopia includes accommodation, an expert guide, meals, transport and more.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                    <button class="booknow">Book Now</button>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                     <image class="ndimage" src="IMG_20261021_144055_216.jpg"  alt="Ethiopia Northern Historic Tour"></image>
+                    <div packageHeadingContainer>
+                        <h1>10 Days Ethiopia Northern Historic Tour</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>Itinerary Start and end in Addis Ababa! With the In-depth Cultural tour 10 Days Ethiopia Northern Historic Tour, you have a 10 days tour package taking you through Addis Ababa, Ethiopia and 5 other destinations in Ethiopia. 10 Days Ethiopia Northern Historic Tour includes accommodation, flights, an expert guide, meals, transport and more.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                    <button class="booknow">Book Now</button>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image class="ndimage" src="tour harari and diree.jpg" alt="Tour to Harar & Dire Dawa"></image>
+                    <div packageHeadingContainer>
+                        <h1>Tour to Harar & Dire Dawa</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>Itinerary Start and end in Addis Ababa! With the In-depth Cultural tour 10 Days Ethiopia Northern Historic Tour, you have a 10 days tour package taking you through Addis Ababa, Ethiopia and 5 other destinations in Ethiopia. 10 Days Ethiopia Northern Historic Tour includes accommodation, flights, an expert guide, meals, transport and more.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                    <button class="booknow">Book Now</button>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image class="ndimage" src="IMG_20261021_144055_497.jpg" alt="Special Omo Valley Tour"></image>
+                    <div packageHeadingContainer>
+                        <h1>Special Omo Valley Tour</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>Itinerary Start and end in Addis Ababa! With the In-depth Cultural tour Special Omo Valley Tour, you have a 6 days tour package taking you through Addis Ababa, Ethiopia and 5 other destinations in Ethiopia. Special Omo Valley Tour includes accommodation, flights, an expert guide, meals, transport and more.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                    <button class="booknow">Book Now</button>
+                </div>
+            </div>
+            <div class="packageboxcontainer">
+                <div class="packageimagecontainer">
+                    <image class="ndimage" src="6 days.jpg" alt="Bale Mountains Trekking Tour"></image>
+                    <div packageHeadingContainer>
+                        <h1>6 Days Bale Mountains Trekking Tour</h1>
+                    </div>
+                </div>
+                <div class="packageparagraphcontianer">
+                    <p>Itinerary Start and end in Addis Ababa! With the In-depth Cultural tour 6 Days Bale Mountains Trekking Tour, you have a 6 days tour package taking you through Addis Ababa, Ethiopia and 5 other destinations in Ethiopia. 6 Days Bale Mountains Trekking Tour includes accommodation, flights, an expert guide, meals, transport and more.</p>
+                </div>
+                <div class="packagereadmorecontainer">
+                   <button class="booknow" >Book Now</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class=" packagetitlecontainer">
+                <a class="title" href="">Contact Us</a>
+            </div>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Email Address...">
+                <input type="text" placeholder="Phone Number...">
+                <input type="text" placeholder="Subject">
+                <input type="textarea" placeholder="Write Message Here...">
+            </form>
+            <button type="submit">Send Message</button>
+        </section>
+        <section>
+            <div class="extracontainer">
+            <div class="link">
+                <a class="lim" href="">Follow us</a>
+                <ul>
+                    <li><a href="">Facebook</a> </li>
+                    <li><a href="">Instagram</a> </li>
+                    <li><a href="">Github</a> </li>
+                    <li><a href="">TikTok</a> </li>
+                </ul>
+            </div>
+            <div class="link">
+                <a class="lim" href="">Quick link</a>
+                <ul>
+                    <li><a href="">Home</a> </li>
+                    <li><a href="">Adventure</a> </li>
+                    <li><a href="">Package</a> </li>
+                    <li><a href="">Contact</a> </li>
+                </ul>
+            </div>
+            <div class="link">
+                <a class="lim" href="">Follow us</a>
+                <ul>
+                    <li><a href="">Jimma University</a> </li>
+                    <li><a href="">Addis Abeba University</a> </li>
+                    <li><a href="">Visit Oromia</a> </li>
+                    <li><a href="">Visit Afar</a> </li>
+                    <li><a href="">Visit Tigray</a> </li>
+                    <li><a href="">Visit Amahara</a> </li>
+                    <li><a href="">Visit Tigray</a> </li>
+                    <li><a href="">Visit Centeral Ethiopia</a> </li>
+                    <li><a href="">Visit Jimma</a> </li>
+                </ul>
+            </div>
+            <div class="link">
+                <a class="lim" href="">Contact us</a>
+                <ul>
+                    <li><a href="">+25191000000</a> </li>
+                    <li><a href="">Visitethiopia@Gmail.Com</a> </li>
+                    <li><a href="">Jimma, Oromia</a> </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> Our Address @ Varnero Building</p>
+        <p>2026 3<sup>rd</sup> Students | &copy All Rights Reserved</p>
+    </footer>
+</body>
+</html>
